@@ -1,0 +1,12 @@
+/* colorhunt.co winter
+112B3C,
+205375,
+F66B0E,
+EFEFEF */
+:root {
+    --primary-color: #112B3C,
+}
+
+h1 {
+    color: var(--primary-color);
+}
