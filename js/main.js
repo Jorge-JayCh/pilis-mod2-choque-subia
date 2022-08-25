@@ -32,4 +32,47 @@ const mostrarDatosClima = ( datos ) => {
     console.log(datos.main.pressure);
 }
 
-d.addEventListener("DOMContentLoaded", obtenerClima);
+d.addEventListener("DOMContentLoaded", obtenerClima); 
+
+// Funcion para manejar el Formulario de Registro 
+function onClick (event) {
+    event.preventDefault(); // para anular la accion normal del boton dentro de un form
+    // this.style.backgroundColor = "black"; //cambia de color el background del boton despues del click
+    const mensaje = {
+      comercio: document.getElementById('comercio').value,
+      titular: document.getElementById('titular').value,
+      celular: document.getElementById('celular').value
+    }
+    console.log(mensaje);
+
+    fetch("https://jsonplaceholder.typicode.com/posts", {
+      method: "POST",
+      body: JSON.stringify(mensaje),
+      headers: { "Content-type": "application/json; charset=UTF-8" },
+    })
+      .then((response) => response.json())
+      .then((json) => { 
+          console.log(json);
+          Swal.fire(
+              'Enviado',
+              'Gracias por tu comentario',
+              'success'
+          );
+          cleanForm(); // Llamada a la funcion cleanForm
+          /* redirectUrl(); */
+      })
+      .catch((err) => console.log(err));
+  }
+// Limpieza de los labels del form con id=formulario
+function cleanForm() {
+    let formulario = document.getElementById('formulario');    
+    formulario.reset();    
+    // this.style.backgroundColor = "buttonface";
+}
+function redirectUrl(){
+    window.location.href = "https://google.com";    
+}
+
+// Inicio de Enviar Registro (capturacion del evento y luego llamada a la funcion onClick definida mas arriba)
+let boton = document.getElementById("enviar");
+boton.addEventListener("click", onClick);

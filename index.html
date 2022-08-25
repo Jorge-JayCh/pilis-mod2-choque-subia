@@ -4,48 +4,125 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Eventos Comerciales</title>
+    <title>Expo Emprendedores</title>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </head>
   <body>
-    <h1>Hola Proyecto Final Mod2</h1>
-    <header id="navbar">
-      <nav>
-        <ul>
-          <li><a href="#">Nosotros</a></li>
-          <li><a href="#">Evento</a></li>
-          <li><a href="#">Registrarse</a></li>
-        </ul>
-        <h1>LOGO</h1>
+    <!-- <h1>Hola Proyecto Final Mod2</h1> -->
+    <header id="mainheader">
+      <nav id="navbar">
+        <div class="container">
+          <ul>
+            <li><a href="#evento">Evento</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#evento">Evento</a></li>
+            <li><a href="#registro">Registrate</a></li>
+          </ul>
+          <!-- <h1>LOGO</h1> -->
+          <div>
+            <a href="#home">
+              <img class="" alt="" loading="lazy" style="max-width: 100%; height: auto;" width="150" height="150" src="http://www.produccion.jujuy.gob.ar/wp-content/uploads/2021/04/cropped-logo-150x150.jpg" title="Acerca de"/>
+            </a>
+          </div>
+        </div>
       </nav>
     </header>
-    <section id="home">
-      <div class="container-section">
-        <h2>Titulo Evento</h2>
-        <h3>Subtitulo</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, perspiciatis!</p>
-      </div>
 
+    <main>
+      <section id="home">
+        <div class="container-section">
+          <h2>¿Quienes somos?</h2>
+          <h3>Subtitulo Reemplazar </h3>
+          <p>Juntos ponteciamos el comercio jujeño</p>
+          <p>Informacion del ministerio de Produccion</p>
+          <!-- no texto dummies, creativos <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, perspiciatis!</p> -->
+        </div>
+  
+        <div>
+          <img src="https://picsum.photos/id/327/600/400" alt="">
+        </div>
+      </section>
+  
+      <section id="evento">
+          <div>
+              <!-- video obtenido del canal de youtube del ministerio de la produccion -->
+              <img src="https://picsum.photos/id/401/600/400" alt="video">
+          </div>
+          <div>
+              <h3>Subtitulo</h3>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores cum, ea fugit vel ullam debitis magni sint numquam, quod harum cumque neque est. Hic, quaerat molestias. Necessitatibus numquam similique ipsa!</p>
+          </div>
+      </section>
+
+      <section id="nosotros">
+        <div class="container">
+          <div class="nosotros-description">
+              <h1><span class="title-one">Organizado por: </span></h1>
+              <h2><span class="title-two">¿Quienes somos?</span></h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et voluptatum deleniti magni quod in aspernatur, aliquam quis quo eligendi cum. Sit ab modi fugit iste eos incidunt unde fuga. Esse?</p>
+          </div>
+            <div class="nosotros-img">
+                <img src="./assets/expojuy-jujuy-.jpg" alt="Logo Oficial Expo Emprendedores">
+            </div>
+        </div>
+      </section> 
+
+      <section id="registro">
+        <div class="container">
+          <div class="contact-tile">
+            <p>Súmate al evento para potenciar el comercio local. Luego te contactaremos </p>
+            <h4>¿Tienes dudas sobre el formulario? </h4>
+            <p>Contactanos</p>
+            <!-- logo y link a whastapp -->
+          </div>
+          <div class="register-form">
+            <h2>Registro</h2>
+            <form id="formulario">
+              <div class="form-group">
+                  <label for="comercio">Comercio</label>
+                  <input class="form-control" type="text" name="comercio" id="comercio">
+              </div>
+              <div class="form-group">
+                  <label for="titular">Titular</label>
+                  <input class="form-control" type="text" name="titular" id="titular">
+              </div>
+              <div class="form-group">
+                  <label for="celular">Celular</label>
+                  <input class="form-control" type="tel" name="celular" id="celular">
+              </div>
+              <button id="enviar" class="btn btn-light">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </section>      
+  
+      <section id="clima">
+          <div>
+              <h2> Asi El clima en el lugar del evento </h2>
+              <img src="https://picsum.photos/id/564/600/400" alt="">
+          </div>
+      </section>
+    </main>
+
+    <footer>
       <div>
-        <img src="https://picsum.photos/id/327/600/400" alt="">
+        <aside>
+            <img class="" alt="" loading="lazy" style="max-width: 100%; height: auto;" width="150" height="150" src="http://www.produccion.jujuy.gob.ar/wp-content/uploads/2021/04/cropped-logo-150x150.jpg" title="Acerca de"/>
+        </aside>
       </div>
-    </section>
+      <div class="site-info">
+          <div class="copyright">
+              <p>Copyright &copy; Ministerio de Desarrollo Económico y Producción de Jujuy</p> 
+              <!-- icono whastapp y link (link obligatorio) -->
+          </div>
+          <div class="credit-info">
+              <h3>Página realizada en colaboración con alumnos de PILIS</h3>
+              <a href="" title="Ir al Perfil en LinkedIn del alumno">Choque Jorge</a>
+              <a href="" title="Ir al Perfil en LinkedIn del alumno" rel="designer">Subia Pedro</a>
+          </div>
+      </div>
+    </footer>
 
-    <section id="evento">
-        <div>
-            <img src="https://picsum.photos/id/401/600/400" alt="video">
-        </div>
-        <div>
-            <h3>Subtitulo</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores cum, ea fugit vel ullam debitis magni sint numquam, quod harum cumque neque est. Hic, quaerat molestias. Necessitatibus numquam similique ipsa!</p>
-        </div>
-    </section>
-
-    <section id="clima">
-        <div>
-            <h2> Asi El clima en el lugar del evento </h2>
-            <img src="https://picsum.photos/id/564/600/400" alt="">
-        </div>
-    </section>
     <script src="./js/main.js" type="module"></script>
   </body>
 </html>
