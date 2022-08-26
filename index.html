@@ -9,50 +9,54 @@
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </head>
   <body>
-    <!-- <h1>Hola Proyecto Final Mod2</h1> -->
     <header id="mainheader">
-      <nav id="navbar">
-        <div class="container">
+      <div class="content-header">
+        <div class="container-logo">
+            <a href="#home">
+              <div class="content-logo">
+                <img class="" alt="" loading="lazy" style="max-width: 100%; height: auto;" width="150" height="150" src="./assets/logo-edep.png" title="Acerca de"/>
+              </div>
+              <h1>Ministerio de Desarrollo Económico y Producción de Jujuy</h1>
+            </a>
+        </div>
+        <nav id="navbar">
           <ul>
             <li><a href="#evento">Evento</a></li>
             <li><a href="#nosotros">Nosotros</a></li>
             <li><a href="#evento">Evento</a></li>
             <li><a href="#registro">Registrate</a></li>
           </ul>
-          <!-- <h1>LOGO</h1> -->
-          <div>
-            <a href="#home">
-              <img class="" alt="" loading="lazy" style="max-width: 100%; height: auto;" width="150" height="150" src="http://www.produccion.jujuy.gob.ar/wp-content/uploads/2021/04/cropped-logo-150x150.jpg" title="Acerca de"/>
-            </a>
-          </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
 
     <main>
       <section id="home">
-        <div class="container-section">
-          <h2>¿Quienes somos?</h2>
-          <h3>Subtitulo Reemplazar </h3>
-          <p>Juntos ponteciamos el comercio jujeño</p>
-          <p>Informacion del ministerio de Produccion</p>
-          <!-- no texto dummies, creativos <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, perspiciatis!</p> -->
+        <div class="container-left-section">
+          <h2>EXPO EMPRENDEDOR</h2>
+          <h3>Juntos ponteciamos el comercio jujeño</h3>
+          <p>El Ministerio de Desarrollo Económico y Producción acerca un paquete de herramientas destinadas a que empresas jujeñas de los sectores productivo y comercial, logren comprender el intercambio de bienes y servicios a nivel regional y mundial, identificando oportunidades de mercado y potenciando sus emprendimientos.</p>
         </div>
   
-        <div>
-          <img src="https://picsum.photos/id/327/600/400" alt="">
+        <div class="container-right-section">
+          <img src="./assets/expojuy-home2.jpg" alt="">
         </div>
       </section>
   
       <section id="evento">
-          <div>
-              <!-- video obtenido del canal de youtube del ministerio de la produccion -->
-              <img src="https://picsum.photos/id/401/600/400" alt="video">
+        <div class="container-left-section">
+          <div class="container-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/XvfjpUq6QFM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
-          <div>
-              <h3>Subtitulo</h3>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores cum, ea fugit vel ullam debitis magni sint numquam, quod harum cumque neque est. Hic, quaerat molestias. Necessitatibus numquam similique ipsa!</p>
-          </div>
+        </div>         
+        <div class="container-right-section">
+            <h2>EXPOJUY 2022</h2>
+            <h3>De Jujuy al Mundo</h3>
+            <p>Es una oportunidad para todos los jujeños de mostrar lo que tenemos, lo que hacemos y lo que podemos llevar al mundo. La Expojuy es una de las ferias más importantes del noroeste argentino.
+            <p>
+              En el evento se expondrá y visibilizará los distintos sectores productivos que sostienen la economía provincial como la minería, tabacalera, citrícola, entre otros, que juegan un rol muy importante.
+            </p>
+        </div>
       </section>
 
       <section id="nosotros">
@@ -98,9 +102,11 @@
       </section>      
   
       <section id="clima">
-          <div>
-              <h2> Asi El clima en el lugar del evento </h2>
-              <img src="https://picsum.photos/id/564/600/400" alt="">
+          <div class="container-clima">
+              <h2> Asi esta el clima en el lugar del evento </h2>
+              <div class="content-clima">
+                <img src="https://picsum.photos/id/564/600/400" alt="">
+              </div>
           </div>
       </section>
     </main>
