@@ -11,14 +11,17 @@ EFEFEF */
   --second-dark-color: #205375;
   --main-light-color: #f66b0e;
   --second-light-color: #efefef;
+  --header-color: rgba(17, 43, 60, 0.95);
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--main-font-family);
 }
 
-html, body {
+html {
   font-family: var(--main-font-family);
   scroll-behavior: smooth;
   background: var(--main-dark-color); 
@@ -28,6 +31,179 @@ html, body {
 img {
     max-width: 100%;
     height: auto;
+}
+
+/************ HEADER ************/
+#mainheader {
+  background-color: var(--header-color);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+  padding: 5px 20px;
+}
+
+#mainheader .content-header {
+  display: flex;
+  max-width: 1500px;
+  max-height: 80px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#mainheader .container-logo a {
+  color: var(--second-light-color);
+  text-decoration: none;
+  display: flex;
+  max-height: 80px;
+  overflow: hidden;
+  transition: .5s;
+}
+
+/* #mainheader .container-logo a:hover {
+    color: var(--main-light-color);
+} */
+
+#mainheader .content-logo {
+  width: 80px;
+  height: 60px;
+  background-color: var(--second-light-color);
+  border-radius: 50%;
+  align-self: center;
+  flex: none;
+}
+
+#mainheader .container-logo a h1 {
+  display: flex;
+  font-size: 1.5rem;
+  text-align: start;
+  justify-content: start;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1em 0; 
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: var(--second-light-color);
+    margin: 0 12px;
+    font-weight: 700;
+    position: relative;
+    transition: 0.5s;
+}
+
+#navbar ul li a::after {
+    content: '';
+    position: absolute;
+    display: block;
+    margin: 0 12px;
+    height: 0.2em;
+    width: 0%;
+    background-color: var(--main-light-color);
+    bottom: -0.4em;
+    transition: all ease-in-out .25s;
+}
+
+#navbar ul li a:hover::after {
+    width: 100%;
+}
+
+#navbar ul li:first-child {
+    margin-right: auto;
+    margin-left: 3em;
+}
+
+#navbar ul li a:hover {
+    color: var(--main-light-color);
+}
+
+/************* HOME *************/
+section {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    flex-direction: row;
+    /* margin-top: 100px; */
+    padding-top: 100px;
+}
+
+.container-img-section {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-text-section {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*************** CLIMA ****************/
+#clima {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient( rgba(17, 43, 60, 0.9), rgba(0, 0, 0, 0.4)),
+  url("../assets/ciudad-cultural3.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+
+#clima .container-clima .title-clima {
+  color: var(--second-light-color);
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding: 1rem;
+  text-align: center;
+}
+
+#clima .content-clima{
+  border-radius: 2%;
+  color: var(--second-light-color);
+  background-color: rgba(239, 239, 239,.1);
+  padding: 2rem;    
+}
+
+#clima #caja1 {
+  text-transform: capitalize;
+}
+
+#caja2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#caja2 .temperatura-container{
+  display: flex;
+  flex-direction: column;
+}
+
+#caja2 .temperatura-container h2 {
+  font-size: 2.5rem;
+}
+
+#caja2 .icon-container h2 {
+  text-transform: capitalize;
+  text-align: center;
 }
 
 a {

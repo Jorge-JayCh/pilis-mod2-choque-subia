@@ -4,73 +4,108 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Expo Emprendedores</title>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </head>
   <body>
-    <!-- <h1>Hola Proyecto Final Mod2</h1> -->
     <header id="mainheader">
-      <nav id="navbar">
-        <div class="container">
+      <div class="content-header">
+        <div class="container-logo">
+          <a href="#home">
+            <div class="content-logo">
+              <img src="./assets/logo-edep.png" />
+            </div>
+            <h2>
+              Ministerio de Desarrollo Económico<br />y Producción de Jujuy
+            </h2>
+          </a>
+        </div>
+        <nav id="navbar">
           <ul>
+            <li><a href="#home">Inicio</a></li>
             <li><a href="#evento">Evento</a></li>
             <li><a href="#nosotros">Nosotros</a></li>
-            <li><a href="#evento">Evento</a></li>
             <li><a href="#registro">Registrate</a></li>
+            <li><a href="#clima">Clima</a></li>
           </ul>
-          <!-- <h1>LOGO</h1> -->
-          <div>
-            <a href="#home">
-              <img class="" alt="" loading="lazy" style="max-width: 100%; height: auto;" width="150" height="150" src="http://www.produccion.jujuy.gob.ar/wp-content/uploads/2021/04/cropped-logo-150x150.jpg" title="Acerca de"/>
-            </a>
-          </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
 
     <main>
       <section id="home">
-        <div class="container-section">
-          <h2>¿Quienes somos?</h2>
-          <h3>Subtitulo Reemplazar </h3>
-          <p>Juntos ponteciamos el comercio jujeño</p>
-          <p>Informacion del ministerio de Produccion</p>
-          <!-- no texto dummies, creativos <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, perspiciatis!</p> -->
+        <div class="container-text-section">
+          <h2>EXPO EMPRENDEDOR</h2>
+          <h3>Juntos ponteciamos el comercio jujeño</h3>
+          <p>
+            El Ministerio de Desarrollo Económico y Producción acerca un paquete
+            de herramientas destinadas a que empresas jujeñas de los sectores
+            productivo y comercial, logren comprender el intercambio de bienes y
+            servicios a nivel regional y mundial, identificando oportunidades de
+            mercado y potenciando sus emprendimientos.
+          </p>
         </div>
-  
-        <div>
-          <img src="https://picsum.photos/id/327/600/400" alt="">
+
+        <div class="container-img-section">
+          <img src="./assets/expojuy-home2.jpg" alt="" />
         </div>
       </section>
-  
+
       <section id="evento">
-          <div>
-              <!-- video obtenido del canal de youtube del ministerio de la produccion -->
-              <img src="https://picsum.photos/id/401/600/400" alt="video">
+        <div class="container-img-section">
+          <div class="container-video">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/XvfjpUq6QFM"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
           </div>
-          <div>
-              <h3>Subtitulo</h3>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores cum, ea fugit vel ullam debitis magni sint numquam, quod harum cumque neque est. Hic, quaerat molestias. Necessitatibus numquam similique ipsa!</p>
-          </div>
+        </div>
+        <div class="container-text-section">
+          <h2>EXPOJUY 2022</h2>
+          <h3>De Jujuy al Mundo</h3>
+          <p>
+            Es una oportunidad para todos los jujeños de mostrar lo que tenemos,
+            lo que hacemos y lo que podemos llevar al mundo. La Expojuy es una
+            de las ferias más importantes del noroeste argentino.
+          </p>
+          <p>
+            En el evento se expondrá y visibilizará los distintos sectores
+            productivos que sostienen la economía provincial como la minería,
+            tabacalera, citrícola, entre otros, que juegan un rol muy
+            importante.
+          </p>
+        </div>
       </section>
 
       <section id="nosotros">
         <div class="container">
           <div class="nosotros-description">
-              <h1><span class="title-one">Organizado por: </span></h1>
-              <h2><span class="title-two">¿Quienes somos?</span></h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et voluptatum deleniti magni quod in aspernatur, aliquam quis quo eligendi cum. Sit ab modi fugit iste eos incidunt unde fuga. Esse?</p>
+            <h2><span class="title-one">Organizado por: </span></h2>
+            <h2><span class="title-two">¿Quienes somos?</span></h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+              voluptatum deleniti magni quod in aspernatur, aliquam quis quo
+              eligendi cum. Sit ab modi fugit iste eos incidunt unde fuga. Esse?
+            </p>
           </div>
-            <div class="nosotros-img">
-                <img src="./assets/expojuy-jujuy-.jpg" alt="Logo Oficial Expo Emprendedores">
-            </div>
+          <div class="nosotros-img">
+            <img
+              src="./assets/expojuy-jujuy-.jpg"
+              alt="Logo Oficial Expo Emprendedores"
+            />
+          </div>
         </div>
-      </section> 
+      </section>
 
       <section id="register">
         <div class="container">
-          <div class="register-title">
+          <div class="contact-tile">
             <p>Súmate al evento para potenciar el comercio local. Luego te contactaremos </p>
             <h4>¿Tienes dudas sobre el formulario? </h4>
             <p>Contactanos</p>
@@ -84,45 +119,94 @@
             <h2>Registro</h2>
             <form id="formulario">
               <div class="form-group">
-                  <label for="comercio">Comercio</label>
-                  <input class="form-control" type="text" name="comercio" id="comercio">
+                <label for="comercio">Comercio</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  name="comercio"
+                  id="comercio"
+                />
               </div>
               <div class="form-group">
-                  <label for="titular">Titular</label>
-                  <input class="form-control" type="text" name="titular" id="titular">
+                <label for="titular">Titular</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  name="titular"
+                  id="titular"
+                />
               </div>
               <div class="form-group">
-                  <label for="celular">Celular</label>
-                  <input class="form-control" type="tel" name="celular" id="celular">
+                <label for="celular">Celular</label>
+                <input
+                  class="form-control"
+                  type="tel"
+                  name="celular"
+                  id="celular"
+                />
               </div>
               <button id="enviar" class="btn btn-light">Enviar</button>
             </form>
           </div>
         </div>
-      </section>      
-  
+      </section>
+
       <section id="clima">
-          <div>
-              <h2> Asi El clima en el lugar del evento </h2>
-              <img src="https://picsum.photos/id/564/600/400" alt="">
+        <div class="container-clima">
+          <h2 class="title-clima">Así está el clima en el lugar del evento</h2>
+          <div class="content-clima">
+            <div id="caja1">
+              <h2 id="ubicacion"></h2>
+              <br />
+            </div>
+            <div id="caja2">
+              <div class="temperatura-container">
+                <h2 id="temperatura-valor"></h2>
+                <br />
+                <div>
+                  <h3 id="temperatura-min"></h3>
+                  <h3 id="temperatura-max"></h3>
+                </div>
+              </div>
+              <div class="icon-container">
+                <h2 id="temperatura-descripcion"></h2>
+                <img
+                  id="icono-animado"
+                  src=""
+                  alt=""
+                  height="200"
+                  width="200"
+                />
+              </div>
+            </div>
+            <div id="caja3">
+              <h3>Veloc. del Viento</h3>
+              <h2 id="viento-velocidad"></h2>
+            </div>
           </div>
+        </div>
       </section>
     </main>
 
     <footer>
       <div>
         <aside>
-            <img class="" alt="" loading="lazy" style="max-width: 100%; height: auto;" width="150" height="150" src="http://www.produccion.jujuy.gob.ar/wp-content/uploads/2021/04/cropped-logo-150x150.jpg" title="Acerca de"/>
+          <img
+            class=""
+            alt=""
+            loading="lazy"
+            style="max-width: 100%; height: auto"
+            width="150"
+            height="150"
+            src="http://www.produccion.jujuy.gob.ar/wp-content/uploads/2021/04/cropped-logo-150x150.jpg"
+            title="Acerca de"
+          />
         </aside>
       </div>
       <div class="site-info">
           <div class="copyright">
               <p>Copyright &copy; Ministerio de Desarrollo Económico y Producción de Jujuy</p> 
               <!-- icono whastapp y link (link obligatorio) -->
-              <a href="https://wa.me/543885055952?text=Hola%20buenos%20días%20Expo%20de%20Emprendedores%20saludos">
-                <img src="assets/whatsapp_icon.png" alt="Icono whastapp">
-                <h3>+54 388 505 5952</h3>
-              </a>
           </div>
           <div class="credit-info">
               <h3>Página realizada en colaboración con alumnos de PILIS</h3>
