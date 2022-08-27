@@ -16,12 +16,9 @@ EFEFEF */
 
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: var(--main-font-family);
 }
 
-html {
+html, body {
   font-family: var(--main-font-family);
   scroll-behavior: smooth;
   background: var(--main-dark-color); 
@@ -217,44 +214,44 @@ a {
   padding: 0 10px;
 }
 
-/* Nosotros*/ 
-#nosotros {
-  padding: 100px 0;
-}
-
+/*************** NOSOTROS ****************/
 .nosotros-description {
   float: left; 
-  width: 45%; 
-  padding-top: 340px; 
+  width: 50%; 
+}
+.nosotros-description .title-one {
+  font-size: 29px;
+  font-weight: bold;
+  text-align: center;
+}
+.nosotros-description .text-one {
+  padding: 2rem 2rem;
+  text-align: justify;
 }
 
 .nosotros-img {
   float: right;
-  width: 55%; 
+  width: 50%; 
 }
 
-/* Registro */
-#register {
-  padding: 120px 0;
-}
-
+/*************** REGISTRO ****************/
 .register-form {
   float: right; 
-  width: 45%;
+  width: 50%;
   padding: 20px; 
 }
-
-.register-title {
+.register-description {
   float: left; 
-  width: 55%; 
+  width: 50%; 
   padding-top: 160px; 
   text-align: center;
 }
-
-form .formgroup {
-  margin-bottom: 1rem;
+.register-form .title-one{
+  text-align: center;
 }
-
+form .form-group {
+  margin-bottom: 2rem;
+}
 form .form-control {
   width: 100%;
   padding: 0.375rem 0.7rem;
@@ -262,7 +259,6 @@ form .form-control {
   line-height: 1.7;
   border: none;
 }
-
 .btn {
   font-size: 15px; 
   padding: 14px 23px;
@@ -272,16 +268,61 @@ form .form-control {
   border-radius: 4px; 
   margin-top: 10px; 
 } 
-
 .btn-light {
-  background: #841934; 
-  border: 1px solid #841934; 
+  background: var(--main-light-color); 
   color: #fff; 
   width: 100%; 
 } 
-
 .btn-light:hover {
-  background-color: #fff; 
-  border: 1px solid #841934; 
-  color: #841934;
+  background-color: var(--second-dark-color); 
+  border: 2px solid #fff; 
+}
+
+/*************** FOOTER ****************/
+#ministerio {
+  display: block;
+  float: left; 
+  width: 50%; 
+  padding: 2.5rem 5rem;
+}
+.ministerio-info{
+  text-align: center;
+}
+#ministerio-contacto {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#datos-contacto p, a{
+  display: inline;
+  color: white;
+}
+#datos-contacto a img {
+  width: 5%;
+  height: 5%;
+}
+
+#creditos {
+  display: block;
+  float: right; 
+  width: 50%; 
+  padding: 2.5rem 5rem;
+}
+.programadores {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.programadores ul li{
+  list-style: none;
+}
+.programadores ul li img {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+.alinear-vertical {
+  display: flex; 
+  align-self: center; 
+  justify-content: center;
 }

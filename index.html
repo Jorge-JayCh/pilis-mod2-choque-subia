@@ -26,8 +26,8 @@
             <li><a href="#home">Inicio</a></li>
             <li><a href="#evento">Evento</a></li>
             <li><a href="#nosotros">Nosotros</a></li>
-            <li><a href="#registro">Registrate</a></li>
-            <li><a href="#clima">Clima</a></li>
+            <li><a href="#register">Registrate</a></li>
+            <!-- <li><a href="#clima">Clima</a></li> -->
           </ul>
         </nav>
       </div>
@@ -55,15 +55,9 @@
       <section id="evento">
         <div class="container-img-section">
           <div class="container-video">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/XvfjpUq6QFM"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/XvfjpUq6QFM" title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
           </div>
         </div>
         <div class="container-text-section">
@@ -86,68 +80,64 @@
       <section id="nosotros">
         <div class="container">
           <div class="nosotros-description">
-            <h2><span class="title-one">Organizado por: </span></h2>
-            <h2><span class="title-two">¿Quienes somos?</span></h2>
-            <p>
+            <h1 class="title-one">Organiza</h1>
+            <!-- <h2><span class="title-two">¿Quienes somos?</span></h2> -->
+            <p class="text-one">
+              La expo de Emprendedores es organizada por el Ministerio de Desarrollo Económico y 
+              de la Producción de Jujuy en conjunto con el Consejo de la Microempresa, 
+              la Escuela de Desarrollo Económico y Productivo con el objetivo de reunir a las Pymes 
+              radicadas en la provincia en un único evento. 
+            </p>
+            <p class="text-one">
+              Asi mismo desde el Ministerio de la Produccion invitamos a las familias jujeñas a acercarse, 
+              conocer y apoyar la produccion de las Pymes. 
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
               voluptatum deleniti magni quod in aspernatur, aliquam quis quo
               eligendi cum. Sit ab modi fugit iste eos incidunt unde fuga. Esse?
             </p>
           </div>
           <div class="nosotros-img">
-            <img
-              src="./assets/expojuy-jujuy-.jpg"
-              alt="Logo Oficial Expo Emprendedores"
-            />
+            <img src="./assets/expojuy-jujuy-.jpg" alt="Logo Oficial Expo Emprendedores" />
           </div>
         </div>
       </section>
 
       <section id="register">
         <div class="container">
-          <div class="contact-tile">
-            <p>Súmate al evento para potenciar el comercio local. Luego te contactaremos </p>
-            <h4>¿Tienes dudas sobre el formulario? </h4>
-            <p>Contactanos</p>
-            <!-- logo y link a whastapp -->
-            <a href="https://wa.me/543885055952?text=Hola%20buenos%20días%20Expo%20de%20Emprendedores%20saludos">
-              <img src="assets/whatsapp_icon.png" alt="Icono whastapp">
-              <h3>+54 388 505 5952</h3>
-            </a>
+
+          <div class="register-description">
+            <h1 class="text-one">Súmate al evento para potenciar el comercio local. Luego te contactaremos </h1>
+            <p>¿Tienes dudas sobre el formulario? </p>
+            <div id="datos-contacto">
+              <p>Contáctenos</p>
+              <a href="https://wa.me/543885055952?text=Hola%20buenos%20días%20Expo%20de%20Emprendedores%20saludos">
+                <img src="assets/whatsapp_icon.png" alt="Icono whastapp">
+              </a>
+              <a href="https://wa.me/543885055952?text=Hola%20buenos%20días%20Expo%20de%20Emprendedores%20saludos">
+                +54 388 505 5952
+              </a>
+            </div>
           </div>
+
           <div class="register-form">
-            <h2>Registro</h2>
+            <h2 class="title-one">Registrate</h2>
             <form id="formulario">
               <div class="form-group">
                 <label for="comercio">Comercio</label>
-                <input
-                  class="form-control"
-                  type="text"
-                  name="comercio"
-                  id="comercio"
-                />
+                <input class="form-control" type="text" name="comercio" id="comercio" />
               </div>
               <div class="form-group">
                 <label for="titular">Titular</label>
-                <input
-                  class="form-control"
-                  type="text"
-                  name="titular"
-                  id="titular"
-                />
+                <input class="form-control" type="text" name="titular" id="titular" />
               </div>
               <div class="form-group">
                 <label for="celular">Celular</label>
-                <input
-                  class="form-control"
-                  type="tel"
-                  name="celular"
-                  id="celular"
-                />
+                <input class="form-control" type="tel" name="celular" id="celular" />
               </div>
               <button id="enviar" class="btn btn-light">Enviar</button>
             </form>
           </div>
+
         </div>
       </section>
 
@@ -170,13 +160,7 @@
               </div>
               <div class="icon-container">
                 <h2 id="temperatura-descripcion"></h2>
-                <img
-                  id="icono-animado"
-                  src=""
-                  alt=""
-                  height="200"
-                  width="200"
-                />
+                <img id="icono-animado" src="" alt="" height="200" width="200" />
               </div>
             </div>
             <div id="caja3">
@@ -189,31 +173,40 @@
     </main>
 
     <footer>
-      <div>
-        <aside>
-          <img
-            class=""
-            alt=""
-            loading="lazy"
-            style="max-width: 100%; height: auto"
-            width="150"
-            height="150"
-            src="http://www.produccion.jujuy.gob.ar/wp-content/uploads/2021/04/cropped-logo-150x150.jpg"
-            title="Acerca de"
-          />
-        </aside>
-      </div>
-      <div class="site-info">
-          <div class="copyright">
+        <div id="ministerio">
+          <div class="ministerio-info">
               <p>Copyright &copy; Ministerio de Desarrollo Económico y Producción de Jujuy</p> 
-              <!-- icono whastapp y link (link obligatorio) -->
           </div>
-          <div class="credit-info">
-              <h3>Página realizada en colaboración con alumnos de PILIS</h3>
-              <a href="" title="Ir al Perfil en LinkedIn del alumno">Choque Jorge</a>
-              <a href="" title="Ir al Perfil en LinkedIn del alumno" rel="designer">Subia Pedro</a>
+          <div id="ministerio-contacto">
+            <div id="datos-contacto">
+              <p>Contacto</p>
+              <a href="https://wa.me/543885055952?text=Hola%20buenos%20días%20Expo%20de%20Emprendedores%20saludos">
+                <img src="assets/whatsapp_icon.png" alt="Icono whastapp">
+              </a>
+              <a href="https://wa.me/543885055952?text=Hola%20buenos%20días%20Expo%20de%20Emprendedores%20saludos">
+                +54 388 505 5952
+              </a>
+            </div>
           </div>
-      </div>
+        </div>
+        <div id="creditos">
+          <div class="programadores">
+              <p>Página realizada en colaboración con alumnos de PILIS</p>
+              <ul>
+                <li>
+                  <div class="alinear-vertical">
+                    <img src="assets/icons-github.png" alt="Icon Git Hub">
+                    <a href="" title="Ir al Perfil en LinkedIn del alumno">Choque Jorge</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="alinear-vertical">
+                    <img src="assets/icons-github.png" alt="Icon Git Hub">
+                    <a href="" title="Ir al Perfil en LinkedIn del alumno">Subia Pedro</a></li>
+                  </div>
+              </ul>
+          </div>
+        </div>
     </footer>
 
     <script src="./js/main.js" type="module"></script>
