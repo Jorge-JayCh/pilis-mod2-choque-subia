@@ -23,7 +23,7 @@ const obtenerClima = async () => {
     let res = await fetch(url)
     .then(res => res.json())
     .then( json => {
-        console.log(json);
+        // console.log(json);
         mostrarDatosClima(json.list[0]);
     })
     .catch((err) => {
@@ -35,12 +35,12 @@ const obtenerClima = async () => {
 const mostrarDatosClima = ( datos ) => {
     // console.log(datos.weather[0].description);
     // console.log(datos.main);
-    console.log(datos.main.temp);
-    console.log(datos.main.temp_max);
-    console.log(datos.main.temp_min);
-    console.log(datos.main.humidity);
-    console.log(datos.main.pressure);
-    console.log(datos.wind.speed);
+    // console.log(datos.main.temp);
+    // console.log(datos.main.temp_max);
+    // console.log(datos.main.temp_min);
+    // console.log(datos.main.humidity);
+    // console.log(datos.main.pressure);
+    // console.log(datos.wind.speed);
 
     $ubicacion.textContent = `Ciudad Cultural, San Salvador de Jujuy`;
 
@@ -62,35 +62,35 @@ const mostrarDatosClima = ( datos ) => {
     switch (datos.weather[0].main) {
         case 'Thunderstorm':
             $iconoAnimado.src='../assets/animated/thunder.svg'
-            console.log('TORMENTA');
+            // console.log('TORMENTA');
             break;
         case 'Drizzle':
             $iconoAnimado.src='../assets/animated/rainy-2.svg'
-            console.log('LLOVIZNA');
+            // console.log('LLOVIZNA');
             break;
         case 'Rain':
             $iconoAnimado.src='../assets/animated/rainy-7.svg'
-            console.log('LLUVIA');
+            // console.log('LLUVIA');
             break;
         case 'Snow':
             $iconoAnimado.src='../assets/animated/snowy-6.svg'
-            console.log('NIEVE');
+            // console.log('NIEVE');
             break;                        
         case 'Clear':
             $iconoAnimado.src='../assets/animated/day.svg'
-            console.log('LIMPIO');
+            // console.log('LIMPIO');
             break;
         case 'Atmosphere':
             $iconoAnimado.src='../assets/animated/weather.svg'
-            console.log('ATMOSFERA');
+            // console.log('ATMOSFERA');
             break;  
         case 'Clouds':
             $iconoAnimado.src='../assets/animated/cloudy-day-1.svg'
-            console.log('NUBES');
+            // console.log('NUBES');
             break;  
         default:
             $iconoAnimado.src='../assets/animated/cloudy-day-1.svg'
-            console.log('por defecto');
+            // console.log('por defecto');
         }
 }
 
